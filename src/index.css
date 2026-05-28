@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Global resets for the pristine Bento Grid theme */
+body {
+  background-color: #020617; /* slate-950 */
+  color: #f8fafc; /* slate-50 */
+  font-family: var(--font-sans);
+}
+
+/* Beautiful bento-grid card overlay style */
+.bento-card {
+  background-color: #0f172a; /* slate-900 */
+  border: 1px solid rgba(51, 65, 85, 0.6); /* border-slate-800 */
+  border-radius: 1.25rem; /* rounded-[20px] */
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease-out;
+}
+
+/* Subtle glow-accent borders for different status levels */
+.bento-card-green {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.bento-card-amber {
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.bento-card-red {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
+}
+
+.glow-red {
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.3);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+}
